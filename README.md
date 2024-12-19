@@ -45,7 +45,7 @@ Antes de rodar o projeto, você precisa ter os seguintes itens instalados na sua
   ```bash
   CREATE DATABASE joindb;
   
-- Configuração do application.yml: Edite o arquivo src/main/resources/application.properties para configurar a conexão com o banco de dados:
+- Configuração do application.yml: Edite o arquivo src/main/resources/application.yml para configurar a conexão com o banco de dados:
 
     ```bash
     spring.datasource.url=jdbc:postgresql://localhost:5432/joindb
