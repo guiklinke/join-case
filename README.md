@@ -17,7 +17,7 @@ Este é um projeto full-stack que combina um front-end desenvolvido com **Angula
 
 Antes de rodar o projeto, você precisa ter os seguintes itens instalados na sua máquina:
 
-- **Java 17**: Baixe e instale a versão 17 do Java. Você pode verificar a instalação com o comando:
+- **Java 17**: Baixe e instale a versão 17 do Java: https://www.oracle.com/br/java/technologies/downloads/. Você pode verificar a instalação com o comando:
 
   ```bash
   java -version
