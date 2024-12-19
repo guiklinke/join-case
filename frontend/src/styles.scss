@@ -1,0 +1,43 @@
+body {
+  background-color: #f8f9fa; 
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+.break-word {
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+}
+.pre-line {
+  white-space: pre-line;
+}
+/* Define o tamanho da fonte e cor de todos os links */
+.navbar-nav .nav-link {
+  color: white !important; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte */
+  font-weight: 500; /* Peso da fonte */
+  padding: 0.5rem 1rem; /* Ajuste do padding para os links */
+}
+
+/* Define o tamanho da fonte e cor do link ativo */
+.navbar-nav .nav-item.active .nav-link {
+  color: white !important; /* Cor do texto ativo */
+  font-size: 1rem; /* Tamanho da fonte ativo */
+  font-weight: 500; /* Peso da fonte ativo */
+  padding: 0.5rem 1rem; /* Manter o mesmo padding */
+}
+
+/* Estilo para o hover, para garantir que a aparência não altere drasticamente */
+.navbar-nav .nav-link:hover {
+  color: white !important; /* Cor do texto no hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo no hover */
+}
+

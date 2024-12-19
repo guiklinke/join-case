@@ -1,0 +1,54 @@
+<div class="container mt-5">
+  <h2>{{ isEditMode ? 'Editar Produto' : 'Novo Produto' }}</h2>
+  <form (ngSubmit)="saveProduto()">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input
+        id="nome"
+        type="text"
+        class="form-control"
+        [(ngModel)]="produto.nome"
+        name="nome"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="descricao" class="form-label">Descrição</label>
+      <input
+        id="descricao"
+        type="text"
+        class="form-control"
+        [(ngModel)]="produto.descricao"
+        name="descricao"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="preco" class="form-label">Preço</label>
+      <input
+        id="preco"
+        type="number"
+        class="form-control"
+        [(ngModel)]="produto.preco"
+        name="preco"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="categoriaId" class="form-label">ID da categoria</label>
+      <input
+        id="categoriaId"
+        type="number"
+        class="form-control"
+        [(ngModel)]="produto.categoriaId"
+        name="categoriaId"
+        required
+      />
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a [routerLink]="['/produtos']" class="btn btn-secondary ms-2">Cancelar</a>
+  </form>
+</div>

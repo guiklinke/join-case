@@ -1,0 +1,20 @@
+api:
+  jwt:
+    issuer: join-api
+    secret: 219a02d1cc69d00438b247a1da12508cd7b201e8ca84c96435285c5f6f21c26d
+    access-token-expiration: 1800000
+
+spring:
+  application:
+    name: join
+  datasource:
+    username: postgres
+    password: 123
+    url: jdbc:postgresql://localhost:5432/joindb
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+    show-sql: false
+

@@ -1,0 +1,31 @@
+<div class="container mt-4">
+  <h2 class="mb-4">Lista de Produtos</h2>
+  <a class="btn btn-success mb-3" [routerLink]="['/produtos/novo']">Adicionar Produto</a>
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <th>ID da categoria</th>
+        <th>Data de Criação</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produto of produtos">
+        <td>{{ produto.id }}</td>
+        <td>{{ produto.nome }}</td>
+        <div class="break-word">{{ produto.descricao }}</div>
+        <td>{{ produto.preco }}</td>
+        <td>{{ produto.categoriaId }}</td>
+        <td>{{ produto.dataCriacao | date: 'dd/MM/yyyy' }}</td>
+        <td>
+          <a class="btn btn-primary btn-sm me-2" [routerLink]="['/produtos/editar', produto.id]">Editar</a>
+          <button class="btn btn-danger btn-sm" (click)="deleteProduto(produto.id)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
